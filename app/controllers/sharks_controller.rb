@@ -63,6 +63,10 @@ class SharksController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
+    def get_shark
+    @shark = Shark.find(params[:shark_id])
+    end
+
     def set_shark
       @shark = Shark.find(params[:id])
     end
