@@ -1,10 +1,11 @@
 class SharksController < ApplicationController
+  before_action :get_shark
   before_action :set_shark, only: [:show, :edit, :update, :destroy]
 
   # GET /sharks
   # GET /sharks.json
   def index
-    @sharks = Shark.all
+    @sharks = @shark.posts
   end
 
   # GET /sharks/1
