@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_action :get_shark
+
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   # GET /posts
@@ -14,7 +16,7 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
-    @post = Post.new
+    @post = @shark.posts.build
   end
 
   # GET /posts/1/edit
@@ -62,6 +64,10 @@ class PostsController < ApplicationController
   end
 
   private
+  def get_shark
+    @shark = Shark.find(params[:shark_id])
+    end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_post
       @post = Post.find(params[:id])

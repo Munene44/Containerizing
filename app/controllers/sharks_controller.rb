@@ -1,11 +1,10 @@
 class SharksController < ApplicationController
-  before_action :get_shark
   before_action :set_shark, only: [:show, :edit, :update, :destroy]
 
   # GET /sharks
   # GET /sharks.json
   def index
-    @sharks = @shark.posts
+    @sharks = Shark.all
   end
 
   # GET /sharks/1
@@ -64,10 +63,7 @@ class SharksController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def get_shark
-    @shark = Shark.find(params[:shark_id])
-    end
-
+    
     def set_shark
       @shark = Shark.find(params[:id])
     end
