@@ -1,0 +1,5 @@
+<%= form_with model: [@shark, @shark.posts.build] do |form| %>
+                <%= form.text_area :body, placeholder: "Your post here" %>
+                <br>
+                <%= form.submit %>
+<% end %>
