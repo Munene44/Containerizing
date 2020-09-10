@@ -10,5 +10,13 @@
   <%= @shark.facts %>
 </p>
 
+<h2>Posts</h2>
+<% for post in @shark.posts %>
+    <ul>
+      <li><%= post.body %></li>
+  </ul>
+<% end %>
+
 <%= link_to 'Edit', edit_shark_path(@shark) %> |
+<%= link_to 'Add Post', shark_posts_path(@shark) %> |
 <%= link_to 'Back', sharks_path %>

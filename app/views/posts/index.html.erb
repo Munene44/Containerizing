@@ -15,10 +15,10 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.body %></td>
-        <td><%= post.shark_id %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= post.shark.name %></td>
+        <td><%= link_to 'Show Shark',[@shark]  %></td>
+        <td><%= link_to 'Edit Post', edit_shark_post_path(@shark, post) %></td>
+        <td><%= link_to 'Destroy Post', [@shark, post], method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Post', new_post_path %>
+<%= link_to 'New Post', new_shark_post_path(@shark) %>
