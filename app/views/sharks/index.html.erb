@@ -16,9 +16,9 @@
       <tr>
         <td><%= shark.name %></td>
         <td><%= shark.facts %></td>
-        <td><%= link_to 'Show', shark %></td>
-        <td><%= link_to 'Edit', edit_shark_path(shark) %></td>
-        <td><%= link_to 'Destroy', shark, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= button_to 'Show', shark_path(:id => shark.id), :method => :get %></td>
+        <td><%= button_to 'Edit', edit_shark_path(:id => shark.id), :method => :get %></td>
+        <td><%= button_to 'Destroy', shark_path(:id => shark.id), :method => :delete %></td>
       </tr>
     <% end %>
   </tbody>

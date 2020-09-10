@@ -1,7 +1,12 @@
 {
+  "name": "sharkapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Munene44/sidekiq-Redis-Rails.git",
+  "author": "nenekelvin <karvinmitchar@gmail.com>",
+  "license": "MIT",
   "dependencies": {
-    "@rails/webpacker": "4.2.2",
-    "stimulus": "^1.1.1"
+    "@rails/webpacker": "4.2.2"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.11.0"
