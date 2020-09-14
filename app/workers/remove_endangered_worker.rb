@@ -1,1 +1,5 @@
-remove_endangered_worker.rb
+class RemoveEndangeredWorker
+  include Sidekiq::Worker
+  sidekiq_options retry: false
+
+end
