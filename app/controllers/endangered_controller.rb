@@ -7,6 +7,8 @@ class EndangeredController < ApplicationController
       render 'index'
     end
   end
+   def data 
+  end
 
 
   private
