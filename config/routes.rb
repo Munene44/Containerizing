@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'endangered/index'
   get 'home/index'
   resources :sharks do
     resources :posts
