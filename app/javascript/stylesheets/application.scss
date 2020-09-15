@@ -1,7 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 
-$white: white;
+$yellow: yellow;
 $black: black;
 
 .navbar {
@@ -10,7 +10,7 @@ $black: black;
 }
 body {
         background: $black;
-        color: $white;
+        color: $yellow;
         font-family: 'Merriweather', sans-serif;
 }
 h1,
@@ -19,30 +19,30 @@ h2 {
 }
 p {
         font-size: 16px;
-        color: $white;
+        color: $yellow;
 }
 a:visited {
         color: $black;
 }
 .jumbotron {
         background: #0048CD;
-        color: $white;
+        color: $yellow;
         text-align: center;
         p {
-                color: $white;
+                color: $yellow;
                 font-size: 26px;
         }
 }
 .link {
-        color: $white;
+        color: $yellow;
 }
 .btn-primary {
-        color: $white;
-        border-color: $white;
+        color: $yellow;
+        border-color: $yellow;
         margin-bottom: 5px;
 }
 .btn-sm {
-        background-color: $white;
+        background-color: $yellow;
         display: inline-block;
 }
 img,
