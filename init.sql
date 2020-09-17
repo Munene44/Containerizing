@@ -1,0 +1,3 @@
+CREATE USER kelvin;
+ALTER USER kelvin WITH SUPERUSER;
+
